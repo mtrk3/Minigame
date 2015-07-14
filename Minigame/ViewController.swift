@@ -16,11 +16,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         for (var i = 0; i < 4; i++) {
-            combination[i] = Int(arc4random_uniform(3) + 1)
+            combination[i] = Int(arc4random_uniform(4) + 1)
         } //配列のそれぞれの要素に１〜４のランダムの数字を代入
         var label1 : Int = combination[0] * 1000 + combination[1] * 100 + combination[2] * 10 + combination[3]
         label.text = String(label1)
-        //combination配列の要素数が４なら４つ、３なら３つ、２なら２つ、１なら１つ、labelに表示されるようにする。
+        //labelに配列を表示
     }
     
     @IBAction func one(){
@@ -38,9 +38,11 @@ class ViewController: UIViewController {
                 var label3 : Int = combination[0]
                 label.text = String(label3)
             }else if combination.count == 0{
-                var combination: [Int] = [0,0,0,0]
+                combination = [0,0,0,0]
                 for (var i = 0; i < 4; i++) {
-                    combination[i] = Int(arc4random_uniform(3) + 1)
+                    combination[i] = Int(arc4random_uniform(4) + 1)
+                    var label4 : Int = combination[0] * 1000 + combination[1] * 100 + combination[2] * 10 + combination[3]
+                    label.text = String(label4)
                 } //配列のそれぞれの要素に１〜４のランダムの数字を代入
             }
         }
@@ -63,9 +65,11 @@ class ViewController: UIViewController {
                 var label3 : Int = combination[0]
                 label.text = String(label3)
             }else if combination.count == 0{
-                var combination: [Int] = [0,0,0,0]
+                combination = [0,0,0,0]
                 for (var i = 0; i < 4; i++) {
-                    combination[i] = Int(arc4random_uniform(3) + 1)
+                    combination[i] = Int(arc4random_uniform(4) + 1)
+                    var label4 : Int = combination[0] * 1000 + combination[1] * 100 + combination[2] * 10 + combination[3]
+                    label.text = String(label4)
                 } //配列のそれぞれの要素に１〜４のランダムの数字を代入
             }
 
@@ -89,9 +93,11 @@ class ViewController: UIViewController {
                 var label3 : Int = combination[0]
                 label.text = String(label3)
             }else if combination.count == 0{
-                var combination: [Int] = [0,0,0,0]
+                combination = [0,0,0,0]
                 for (var i = 0; i < 4; i++) {
-                    combination[i] = Int(arc4random_uniform(3) + 1)
+                    combination[i] = Int(arc4random_uniform(4) + 1)
+                    var label4 : Int = combination[0] * 1000 + combination[1] * 100 + combination[2] * 10 + combination[3]
+                    label.text = String(label4)
                 } //配列のそれぞれの要素に１〜４のランダムの数字を代入
             }
         }
@@ -112,9 +118,11 @@ class ViewController: UIViewController {
                 var label3 : Int = combination[0]
                 label.text = String(label3)
             }else if combination.count == 0{
-                var combination: [Int] = [0,0,0,0]
+                combination = [0,0,0,0]
                 for (var i = 0; i < 4; i++) {
-                    combination[i] = Int(arc4random_uniform(3) + 1)
+                    combination[i] = Int(arc4random_uniform(4) + 1)
+                    var label4 : Int = combination[0] * 1000 + combination[1] * 100 + combination[2] * 10 + combination[3]
+                    label.text = String(label4)
                 } //配列のそれぞれの要素に１〜４のランダムの数字を代入
             }
         }
