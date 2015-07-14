@@ -29,8 +29,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="one" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9y8-qH-P9a"/>
-                                    <action selector="two" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QCt-9x-DHj"/>
+                                    <action selector="one" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CZY-zQ-cOz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgq-54-TpY">
@@ -39,6 +38,9 @@
                                 <state key="normal" title="2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="two" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vjo-1X-9vq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgT-7a-FnK">
                                 <rect key="frame" x="224" y="463" width="30" height="30"/>
@@ -47,7 +49,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="four" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WIS-Ur-1Jo"/>
+                                    <action selector="four" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aUV-4k-uKZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqt-rp-e08">
@@ -57,7 +59,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="three" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0N7-PO-mhC"/>
+                                    <action selector="three" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Prg-6m-sgo"/>
                                 </connections>
                             </button>
                         </subviews>

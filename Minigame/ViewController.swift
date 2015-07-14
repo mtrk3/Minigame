@@ -18,11 +18,7 @@ class ViewController: UIViewController {
         for (var i = 0; i < 4; i++) {
             combination[i] = Int(arc4random_uniform(3) + 1)
         } //配列のそれぞれの要素に１〜４のランダムの数字を代入
-        var l1 : Int = combination[0]
-        var l2 : Int = combination[1]
-        var l3 : Int = combination[2]
-        var l4 : Int = combination[3]
-        var label1 : Int = l1 * 1000 + l2 * 100 + l3 * 10 + l4
+        var label1 : Int = combination[0] * 1000 + combination[1] * 100 + combination[2] * 10 + combination[3]
         label.text = String(label1)
         //combination配列の要素数が４なら４つ、３なら３つ、２なら２つ、１なら１つ、labelに表示されるようにする。
     }
@@ -30,6 +26,7 @@ class ViewController: UIViewController {
     @IBAction func one(){
         var number1 = 1
         if number1 == combination[0] {
+            combination.removeAtIndex(0)
             
             if combination.count == 3{
                 var label1 : Int = combination[0] * 100 + combination[1] * 10 + combination[2]
@@ -40,8 +37,7 @@ class ViewController: UIViewController {
             }else if combination.count == 1{
                 var label3 : Int = combination[0]
                 label.text = String(label3)
-            }
-            else if combination.count == 0{
+            }else if combination.count == 0{
                 var combination: [Int] = [0,0,0,0]
                 for (var i = 0; i < 4; i++) {
                     combination[i] = Int(arc4random_uniform(3) + 1)
@@ -66,8 +62,7 @@ class ViewController: UIViewController {
             }else if combination.count == 1{
                 var label3 : Int = combination[0]
                 label.text = String(label3)
-            }
-            else if combination.count == 0{
+            }else if combination.count == 0{
                 var combination: [Int] = [0,0,0,0]
                 for (var i = 0; i < 4; i++) {
                     combination[i] = Int(arc4random_uniform(3) + 1)
@@ -77,7 +72,7 @@ class ViewController: UIViewController {
         }
         
         //combination配列の要素数が４なら４つ、３なら３つ、２なら２つ、１なら１つ、labelに表示されるようにする。
-        }
+    }
 
     @IBAction func three(){
         var number3 = 3
@@ -93,8 +88,7 @@ class ViewController: UIViewController {
             }else if combination.count == 1{
                 var label3 : Int = combination[0]
                 label.text = String(label3)
-            }
-            else if combination.count == 0{
+            }else if combination.count == 0{
                 var combination: [Int] = [0,0,0,0]
                 for (var i = 0; i < 4; i++) {
                     combination[i] = Int(arc4random_uniform(3) + 1)
@@ -117,8 +111,7 @@ class ViewController: UIViewController {
             }else if combination.count == 1{
                 var label3 : Int = combination[0]
                 label.text = String(label3)
-            }
-            else if combination.count == 0{
+            }else if combination.count == 0{
                 var combination: [Int] = [0,0,0,0]
                 for (var i = 0; i < 4; i++) {
                     combination[i] = Int(arc4random_uniform(3) + 1)
